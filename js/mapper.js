@@ -4,21 +4,20 @@ function getPosition() {
     return a;
 };
 
-//list of all info spots on panorama1
+
 var infospotsall = infospots;
 
 function isHovering() {
-    // Recorremos todos los infospots
+
     for (let i = 0; i < infospots.length; i++) {
-        // Si el infospot está siendo sobrevolado (hovering)
         if (infospots[i].isHovering) {
-            return true;  // Retornamos true si al menos uno está siendo sobrevolado
+            return true;  
         }
     }
-    return false;  // Retornamos false si ninguno está siendo sobrevolado
+    return false;  
 }
 
-//nombre de la panoramica 
+
 panorama.addEventListener('click', function(event) {
 
     let clickedPos = getPosition();
