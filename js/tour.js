@@ -1,9 +1,7 @@
-// Global variables
-// This variable holds the path to the panorama image
+
 const panoramaImagePath = '/img/2.jpg'; 
 const viewerContainer = document.querySelector('#panorama-container');
 
-// Create the panorama object
 const panorama = new PANOLENS.ImagePanorama(panoramaImagePath);
 
 
